@@ -1,0 +1,138 @@
+.main-content {
+  padding: 0% 11% 0% 11%;
+}
+
+h2, h4 {
+  font-family: "Karla";
+  margin-left: 10px;
+  color: #821c1c;
+}
+
+p {
+  text-align: justify;
+  font-family: "Karla";
+  color: #610e0e;
+  margin-bottom: 100px;
+}
+
+h3 {
+  margin-left: 20px;
+  margin-top: -20px;
+  font-family: "Karla";
+  opacity: 0.5;
+  color: #821c1c;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: grey;
+  margin-bottom: 50px;
+}
+
+
+.accordion-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion-content {
+  padding: 10px;
+}
+
+.sub-heading {
+  margin-bottom: 5px;
+  color: #821c1c;
+}
+
+.accordion-icon {
+  font-size: 20px;
+}
+
+.accordion-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.accordion {
+  flex-basis: calc(50% - 10px); 
+  background-color: rgba(235, 222, 210, 0.479);
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 24px;
+}
+.dp-dn-text{
+  font-family: "Karla";
+  color: #610e0e;
+}
+.container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-top: 50px;
+}
+.container-hed{
+  display: flex;
+
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom:-40px;
+}
+.gap-hed {
+  width: 60.2%; 
+}
+.container-hed span{
+  font-family: "karla";
+  color: #821c1c;
+}
+.dropdown-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.gap {
+  width: 100%; 
+}
+.dw-1{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  width: 100%;
+}
+
+/* Media query for mobile view */
+@media (max-width: 767px) {
+  .container-hed {
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 20px; 
+  }
+
+  .gap-hed {
+    width: 100%;
+    height: 10px; 
+  }
+  .container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 50px;
+  }
+  .accordion-container {
+    display: block; 
+  }
+
+  .accordion {
+    flex-basis: 100%; 
+  }
+  mat-form-field{
+    width: 100%;
+  }
+  .main-content {
+    padding: 0% 16% 0% 16%;
+}
+}

@@ -1,0 +1,49 @@
+<div class="main-content">
+  <div class="container">
+    <div class="dp-dn">
+      <span class="dp-dn-text">ALPHABETICALLY</span>
+      <mat-form-field>
+        <mat-label>SELECT ALPHABET</mat-label>
+        <mat-select [(ngModel)]="selectedAlphabetValue" name="Alphabet" (ngModelChange)="filterAccordions()">
+          <mat-option *ngFor="let f of alphabet" [value]="f.value">
+            {{ f.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="gap"></div>
+
+    <div class="dp-dn">
+      <span class="dp-dn-text">SORT BY</span>
+      <mat-form-field class="check">
+        <mat-label>SORT BY</mat-label>
+        <mat-select [(ngModel)]="selectedSortValue" name="SortBy">
+          <mat-option *ngFor="let c of sortBy" [value]="c.value">
+            {{ c.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="accordion-container">
+    <div class="accordion" *ngFor="let item of filteredAccordions">
+      <div class="accordion-heading" (click)="toggleAccordion(item)">
+        <h2>{{ item.accordionTitle }}</h2>
+        <span class="accordion-icon">{{ item.isExpanded ? '-' : '+' }}</span>
+      </div>
+      <div class="sub-heading">
+        <h3>{{ item.subHeading }}</h3>
+      </div>
+      <div class="accordion-content" *ngIf="item.isExpanded">
+        <div class="content">
+          <p>{{ item.content }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>

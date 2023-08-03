@@ -1,0 +1,345 @@
+header {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.logo-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  
+}
+
+nav {
+  position: relative;
+  z-index: 2;
+  padding: 115px 0px;
+  background-image: url('../assets/header-Image.png');
+  background-size: cover;
+}
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-family: "karla";
+
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+nav span{
+  font-size: 60px;
+  text-align: center;
+  color: white; 
+  justify-content: space-around;
+  display: flex;
+  padding-top: 57px;
+}
+.nav-content {
+  margin-top: -54px;
+  display: flex;
+  justify-content:space-evenly;
+  border-bottom: 2px solid white; 
+  padding-bottom: 5px; 
+}
+
+.nav-icon{
+  width: 120px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 8px;
+  color: white;
+}
+.nav-icon i :hover{
+  cursor:pointer ;
+}
+.header-baground {
+  width: 100%;
+  height: 230px;
+}
+
+.search{
+ 
+  border: none;
+  border-radius: 19px;
+  padding: 6px;
+  width: 122%;
+  height: 82%;
+  margin-right: 4px;
+}
+@media (max-width: 767px) {
+  nav {
+    padding: 20px 0px; 
+    background-color: #333; 
+  }
+
+  .nav-content {
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 29px;
+  }
+
+  .nav-icon {
+    width: 120px;
+    
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    color: white;
+    padding-top: 20px; 
+  }
+
+  .nav-icon i {
+    font-size: 20px; 
+    margin-left: 3rem;
+  }
+
+ 
+}
+
+
+
+footer {
+  background: white;
+  border-radius: 2px;
+  padding: 20px;
+  margin-top: 20px;
+  height: 80px;
+  margin-top: -40px;
+
+}
+.hidden {
+  display: none;
+}
+
+.arrow-icon {
+  vertical-align: middle;
+  color: white;
+  font-size: 14px;
+  transform: rotate(90deg);
+  margin-left: -85px;
+  margin-top: 7px;
+}
+
+.cntrl-content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.logo-image {
+  height: 74px;
+  width: 84px;
+}
+
+.olive-green-div {
+  background-color: rgb(32, 67, 10);
+  color: white;
+  padding: 81px 3px;
+}
+.emil-content{
+  display: flex;
+  justify-content: center;
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.sign-up{
+  color: white;
+}
+
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  font-family: "karla";
+  position: relative; 
+}
+
+.footer-section {
+  text-align: left;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 10px;
+}
+
+
+.footer-section:not(:last-child) {
+  padding-right: 20px; 
+}
+
+
+.footer-content::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: black;
+  transform: translateY(-50%); 
+}
+.social-media{
+  display: flex;
+  justify-content: flex-start;
+
+}
+.social-icon {
+  margin-right: 10px; 
+}
+.discount{
+  /* ; */
+  font-size: 40px;
+}
+p{
+  font-size: 15px;
+  font-family: "karla"
+}
+.sub-protal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub-portal-1{
+  margin-top: -48px;
+}
+.sub-portal-2{
+  margin-top:65px;
+
+}
+.email-container {
+  position: relative;
+  width: 300px;
+}
+
+
+.email-input {
+  width: 211%;
+  border: none;
+  border-bottom: 2px solid #f1eded;
+  outline: none;
+  font-size: 16px;
+  background-color: rgb(32, 67, 10);
+  padding: 10px 15px 8px 0px;
+  color: white;
+  margin-left: -175px;
+  margin-top: -8px;
+}
+
+
+.email-input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Karla";
+}
+.logo-image {
+  border-radius: 50%;
+  
+}
+.contact{
+  margin-right: 10px;
+}
+.subscribe-button {
+  width: 136px;
+  position: absolute;
+  top: -17px;
+  right: -172px;
+  bottom: 13px;
+  background-color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+@media (max-width: 767px) {
+  .olive-green-div{
+    text-align: center;
+    padding: 58px 14px;
+  }
+  .email-container {
+    width: 100%; 
+  }
+
+  .subscribe-button {
+    position: static;
+    width: 100%; 
+    margin-top: 10px; 
+  }
+  .email-input{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #f1eded;
+    outline: none;
+    font-size: 16px;
+    background-color: rgb(32, 67, 10);
+    padding: 16px 1px 17px 1px;
+    color: white;
+    margin-left: 0;
+    margin-top: -8px;
+  }
+  .search{
+ 
+    margin: -16px 0px 9px 0px;
+    border: none;
+    border-radius: 34px;
+    padding: 6px 1rem 10px 13px;
+    width: 100%;
+   
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-content {
+    flex-direction: column; 
+  }
+
+
+  .footer-section {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+ 
+  .footer-section:not(:last-child) {
+    padding-right: 0;
+  }
+  .footer-content::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: black;
+    transform: translateY(-50%); 
+  }
+  .social-media{
+    display: flex;
+    justify-content: space-around;
+  
+  }
+}
