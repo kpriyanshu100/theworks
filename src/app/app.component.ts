@@ -17,10 +17,12 @@ export class AppComponent {
   searchQuery: string = '';
   email: string = '';
   inputValueFromParent: string='';
+  serchButton:boolean=false;
   constructor(private sharedService: SharedDataService) {}
   openSearchInput() {
     this.searchBoxVisible = true;
     this.searchSymbol=false;
+    this.serchButton=true;
   }
 
   onInputBlur(event: any) {
@@ -29,7 +31,12 @@ export class AppComponent {
     console.log("Input blurred. Value: ", event.target.value);
   }
 
- 
+  onSerchButton(){
+    this.serchButton=false;
+    this.searchSymbol=true;
+    this.searchBoxVisible=false;
+    
+  }
 
   onSubscribe() {
     // Basic email validation using regex pattern

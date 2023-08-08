@@ -14,6 +14,7 @@
        
         <i *ngIf="searchSymbol" class="bi bi-search" (click)="openSearchInput()"></i>
         <input (blur)="onInputBlur($event)" *ngIf="searchBoxVisible" type="search" class="search" aria-label="search" placeholder="Search">
+        <i *ngIf="serchButton" (click)="onSerchButton()" class="bi bi-x close-search"></i>
         <i class="bi bi-person"></i>
         <i class="bi bi-bag"></i>
       </div>

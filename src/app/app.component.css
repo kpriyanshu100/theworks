@@ -51,7 +51,7 @@ nav span{
 }
 
 .nav-icon{
-  width: 120px;
+  width: 160px;
   display: flex;
   justify-content: space-around;
   padding-top: 8px;
@@ -342,4 +342,13 @@ p{
     justify-content: space-around;
   
   }
+
+
+   
+    .close-search {
+      margin-top: 10px;
+      margin-right: 10px;
+      cursor: pointer;
+    
+}
 }
