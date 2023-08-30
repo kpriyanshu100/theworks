@@ -1,1 +1,30 @@
-<p>resources works!</p>
+<div>
+   
+  
+    <mat-paginator [length]="2"
+                   [pageIndex]="currentPageIndex"
+                   [pageSize]="1"
+                 (page)="changePage($event)">
+    </mat-paginator>
+  <table>
+      <thead>
+          <tr>
+              <th>Id</th>
+              <th>Email</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Avatar</th>
+  
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let dat of tableData?.data">
+              <td>{{dat.id}}</td>
+              <td>{{dat.email}}</td>
+              <td>{{dat.first_name}}</td>
+              <td>{{dat.last_name}}</td>
+              <td><img src={{dat.avatar}} /></td>
+          </tr>
+      </tbody>
+  </table>
+  

@@ -1,0 +1,12 @@
+.loginForm{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+table, td, tr,th{
+    margin-top: 10px;
+    width: auto;
+    margin-left:50px;
+    border: 1px solid black
+}
